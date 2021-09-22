@@ -1,0 +1,9 @@
+Mi nombre es Alejandra Fernandez Garcia,
+vivo en Sahagun-Cordoba,  soy ingeniera de sistemas, me gusta hacer ejercicio, leer, 
+hacer manualidades como accesorios tejidos y recamados, tambien vendo toallas personalizadas y hago bordados personalizados. 
+Mi objetivo es aprender desarrollo web y crecer profesionalmente con ese perfil. 
+
+Proyecto de ventas 
+
+Realizar una aplicacion para gestionar los diferentes procesos de una tienda.
+Gestion de roles, usuarios, accesos y ventas.
