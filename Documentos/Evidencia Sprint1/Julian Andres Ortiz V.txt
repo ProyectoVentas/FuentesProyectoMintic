@@ -1,0 +1,11 @@
+Me presento mi nombre es Julian Andres Ortiz , actualmente vivo en Bogotá y soy ingeniero electrónico , 
+trabajo en Schlumberger como ingeniero junior de desarrollo , en mis tiempos libres me gusta 
+jugar baloncesto y videojuegos y por ultimo las expectativas que tengo de este ciclo es poder adquirir 
+conocimientos en front end ya que mi poca experiencia ha sido totalmente en back end.
+
+Gracias y feliz dia.
+
+Proyecto de ventas 
+
+Realizar una aplicacion para gestionar los diferentes procesos de una tienda.
+Gestion de roles, usuarios, accesos y ventas.
