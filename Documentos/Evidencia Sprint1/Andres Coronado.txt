@@ -1,0 +1,9 @@
+Mi nombre es Andrés Felipe Coronado Britto,
+vivo en un lugar tranquilo,  soy ingeniero electrónico,en mis tiempos libres
+me gusta leer  y ver  vídeos de temas de actualidad, mi objetivo es aprender
+a programar y entender un poco como es la programación en el ambiente profesional.
+
+Proyecto de ventas 
+
+Realizar una aplicacion para gestionar los diferentes procesos de una tienda.
+Gestion de roles, usuarios, accesos y ventas.
