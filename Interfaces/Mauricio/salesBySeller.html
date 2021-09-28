@@ -4,14 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Axis</title>
+    <title>Ventas por vendedor</title>
+    <script async type="text/javascript" src="./codigo js/funcionesUpdateDelete.js"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../axis/css/main.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../axis/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="./dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../axis/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="./css/formato.css">
 </head>
 
 <body class="hold-transition">
@@ -46,7 +48,43 @@
         </div>
     </nav>
 
-    Acá va el contenido de la página
+   
+
+    <form action="/action_page.php">
+   
+        <div class="container">
+          <h1>Informacion  vendedor id</h1>
+          <p>Solo lectura</p>
+          <hr>
+          <div>
+            <table>
+                <tr>
+                  <th>IU Vendedor</th>
+                  <th>Ventas en proceso</th>
+                  <th>Ventas canceladas</th>
+                  <th>Ventas confirmadas</th>
+                  <th>Reputación</th>
+                  <th>Tiempo de actividad</th>
+                </tr>
+                <tr>
+                  <td>msherrerap</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>107</td>
+                  <td>4,5/5</td>
+                  <td>174 días</td>
+                </tr>
+               
+              </table>
+            </div>
+              
+        <hr>
+    </div>
+        
+    
+          
+       
+      </form>
 
     <!-- Este es el footer -->
     <footer class="footer bg-dark rounded-top text-center gradient">
