@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crear Usuario</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../axis/css/main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../axis/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../axis/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="./css/formato.css">
+</head>
+
+<body class="hold-transition">
+
+    <!-- Este es el header donde va el navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark gradient">
+        <a class="navbar-brand" href="#">Axis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Vendedores</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Gestion Ventas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gestion Roles</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li><a href="./login.html" class="btn btn-primary">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+
+    <form action="/action_page.php">
+   
+        <div class="container">
+          <h1>Registro</h1>
+          <p>Por favor llena todos los campos.</p>
+          <hr>
+          <div>
+          <label for="Nombre"><b>Nombre</b></label>
+          <input type="text" placeholder="Nombre" name="Fname" id="fname" required>
+        </div>
+          <div>
+          <label for="Apellido"><b>Apellido</b></label>
+          <input type="text" placeholder="Apellido" name="Lname" id="Lname" required>
+        </div>
+          <div>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Email" name="email" id="email" required>
+        </div>
+        <div>
+        <label for="phone"><b>Celular</b></label>
+        <input type="text" placeholder="Movil" name="phone" id="phone" required>
+    
+    </div>
+        
+        <div>
+            <label for="fechaDeNacimiento"><b>Fecha de Nacimiento</b></label>
+            <input type="date" placeholder="dd/mm/yyyy" name="bdate" id="bdate" required>
+        </div>
+          <br>
+          <div>
+          <label for="psw"><b>Contrasena</b></label>
+          <input type="password" placeholder="Contrasena" name="psw" id="psw" required>
+        </div>
+          <br>
+          <div>
+          <label for="psw-repeat"><b>Repetir Contrasena</b></label>
+          <input type="password" placeholder="Repetir contrasena" name="psw-repeat" id="psw-repeat" required>
+        </div>
+<br>
+        <div class="dropdown">
+            <label for="Rol"><b>Escoger Rol:</b></label>
+            <select name="roles" id="roles">
+              <option value="vendedor">Vendedor</option>
+              <option value="administrador">Administrador</option>
+              <option value="ejecutivo">Ejecutivo</option>
+              <option value="operario">Operario</option>
+              <option value="director">Director</option>
+              <option value="gerenteComercial">Gerente Comercial</option>
+              <option value="Seguridad">Seguridad</option>
+            </select>
+            <br><br>
+          </div>
+          <hr>
+         
+      <div>
+                    <p>Al crear la cuenta aceptas <a href="#">Terminos & Privacidad</a>.</p>
+          <button type="submit" class="registerbtn">Registrarse</button>
+        </div>
+        <div class="container signin">
+            <p>Ya tienes una cuenta? <a href="#">Login</a>.</p>
+          </div>
+        
+          </div>
+      
+        
+      </form>
+
+    <!-- Este es el footer -->
+    <footer class="footer bg-dark rounded-top text-center gradient">
+        <div class="container py-2">
+            <p class="text-white my-2">
+                &copy;Axis - 2021
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
