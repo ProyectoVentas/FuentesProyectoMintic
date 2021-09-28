@@ -4,14 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Axis</title>
+    <title>Datos Usuario</title>
+    <script async type="text/javascript" src="./codigo js/funcionesUpdateDelete.js"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../axis/css/main.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../axis/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="./dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../axis/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="./css/formato.css">
 </head>
 
 <body class="hold-transition">
@@ -46,7 +48,44 @@
         </div>
     </nav>
 
-    Acá va el contenido de la página
+   
+
+    <form action="/action_page.php">
+   
+        <div class="container">
+          <h1>Informacion  Empleado</h1>
+          <p>Actualizar o Eliminar empleado.</p>
+          <hr>
+          <div>
+            <table>
+                <tr>
+                  <th>Apellido</th>
+                  <th>Nombre</th>
+                  <th>Email</th>
+                  <th>Celular</th>
+                  <th>Fecha de Nacimiento</th>
+                  <th>Opciones</th>
+                </tr>
+                <tr>
+                  <td>Coronado</td>
+                  <td>Andres</td>
+                  <td>andres@gmail.com</td>
+                  <td>0324678954</td>
+                  <td>August/28/2000</td>
+                  <td><button type="button" class="update" id="update">Actualizar</button> <button button type="button" class="delete" id="delete">Eliminar</button></td>
+    
+                </tr>
+               
+              </table>
+            </div>
+              
+        <hr>
+    </div>
+        
+    
+          
+       
+      </form>
 
     <!-- Este es el footer -->
     <footer class="footer bg-dark rounded-top text-center gradient">
