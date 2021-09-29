@@ -1,0 +1,6 @@
+Hola, mi nombre es Mauricio Stiven Herrera Palacio, vivo en San José de la Montaña de Antioquia,
+soy estudiante de Ingeniería Forestal, me gusta la yuca. Mi objetivo es desarrollar proyectos 
+propios con ayuda del desarrollo web y ser útil a quienes me encuentre.
+
+Proyecto de ventas
+Realizar una aplicación para gestionar los diferentes procesos de una tienda.
