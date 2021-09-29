@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productos</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../axis/css/main.css">
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="../axis/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../axis/dist/css/adminlte.min.css">
+
+</head>
+
+<body class="hold-transition">
+
+    <!-- Este es el header donde va el navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark gradient">
+        <a class="navbar-brand" href="#">Axis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Vendedores</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Gestion Ventas</a>
+                </li>
+
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li><a href="./login.html" class="btn btn-primary">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+
+        <form>
+            <div class="card card-danger">
+                <div class="card-body">
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h3>Productos</h3>
+                            <button type="submit" class="btn btn-primary">Nuevo +</button> <br><br>
+                        </div>
+                        <br><br>
+
+                        <!-- /.col -->
+                        <div class="col-md-12">
+                            <div class="card">
+                                
+                                <div class="card-header">
+
+
+                                    <div class="card-tools">
+                                        <ul class="pagination pagination-sm float-right">
+                                            <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 15px">Id Producto</th>
+                                                <th>Descripcion</th>
+                                                <th>Estado</th>
+                                                <th style="width: 40px">Actualizar</th>
+                                                <th style="width: 40px">Eliminar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1.</td>
+                                                <td>Update software</td>
+                                                <td>
+                                                    Estado
+                                                </td>
+                                                <td>
+
+                                                    <a class="btn btn-app">
+                                                        <i class="fas fa-edit"></i> Editar
+                                                    </a>
+
+                                                </td>
+                                                <td>
+
+                                                    <a class="btn btn-app">
+                                                        <i class="fas fa-edit"></i> Editar
+                                                    </a>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2.</td>
+                                                <td>Clean database</td>
+                                                <td>
+                                                    Estado
+                                                </td>
+                                                <td>
+
+                                                    <a class="btn btn-app">
+                                                        <i class="fas fa-edit"></i> Editar
+                                                    </a>
+
+                                                </td>
+                                                <td>
+
+                                                    <a class="btn btn-app">
+                                                        <i class="fas fa-edit"></i> Editar
+                                                    </a>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3.</td>
+                                                <td>Cron job running</td>
+                                                <td>
+                                                    Estado
+                                                </td>
+                                                <td>
+
+                                                    <a class="btn btn-app">
+                                                        <i class="fas fa-edit"></i> Editar
+                                                    </a>
+
+                                                </td>
+                                                <td>
+
+                                                    <a class="btn btn-app">
+                                                        <i class="fas fa-edit"></i> Editar
+                                                    </a>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4.</td>
+                                                <td>Fix and squish bugs</td>
+                                                <td>
+                                                    Estado
+                                                </td>
+                                                <td>
+
+                                                    <a class="btn btn-app">
+                                                        <i class="fas fa-edit"></i> Editar
+                                                    </a>
+
+                                                </td>
+                                                <td>
+
+                                                    <a class="btn btn-app">
+                                                        <i class="fas fa-edit"></i> Editar
+                                                    </a>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+        </form>
+    </div>
+
+    </div>
+
+    <!-- Este es el footer -->
+    <footer class="footer bg-dark rounded-top text-center gradient">
+        <div class="container py-2">
+            <p class="text-white my-2">
+                &copy;Axis - 2021
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
