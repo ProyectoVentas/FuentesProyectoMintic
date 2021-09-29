@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ventas</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../axis/css/main.css">
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="../axis/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../axis/dist/css/adminlte.min.css">
+
+</head>
+
+<body class="hold-transition">
+
+    <!-- Este es el header donde va el navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark gradient">
+        <a class="navbar-brand" href="#">Axis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Vendedores</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Gestion Ventas</a>
+                </li>
+
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li><a href="./login.html" class="btn btn-primary">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <div class="card card-danger">
+            
+            <div class="card-body">
+                <label>Id:{123456}     Nuevo Pedido</label> <label>ID Vendedor:  {idVendedor}</label>
+                <div class="row">
+                    
+                    <div class="col-5">
+                        <label>Cliente</label>
+                        <input type="text" class="form-control" placeholder="Nombre o Identificacion">
+                        <button type="submit" class="btn btn-primary"> Nuevo Cliente +</button>
+
+                    </div>
+                    
+
+                    <div class="col-5">
+                        <div class="form-group">
+                            <label>Date:</label>
+                            <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                    data-target="#reservationdate" />
+                                <div class="input-group-append" data-target="#reservationdate"
+                                    data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-body -->
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Productos agregados</h3>
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm" style="width: 150px;">
+                                <button type="submit" class="btn btn-primary"> Agregar Productos</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body table-responsive p-0">
+                        <table class="table table-hover text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>id producto</th>
+                                    <th>cantidad</th>
+                                    <th>valor u</th>
+                                    <th>valor total</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>183</td>
+                                    <td>John Doe</td>
+                                    <td>11-7-2014</td>
+                                    <td><span class="tag tag-success">Approved</span></td>
+
+                                </tr>
+                                <tr>
+                                    <td>219</td>
+                                    <td>Alexander Pierce</td>
+                                    <td>11-7-2014</td>
+                                    <td><span class="tag tag-warning">Pending</span></td>
+
+                                </tr>
+                                <tr>
+                                    <td>657</td>
+                                    <td>Bob Doe</td>
+                                    <td>11-7-2014</td>
+                                    <td><span class="tag tag-primary">Approved</span></td>
+
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>Mike Doe</td>
+                                    <td>11-7-2014</td>
+                                    <td><span class="tag tag-danger">Denied</span></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- /.card-body -->
+                </div>
+                <div class="col-12">
+                    <div class="card">
+                        <button type="submit" class="btn btn-primary"> Guardar Pedido</button>
+                        
+                    </div>
+                </div>
+                <!-- /.card -->
+            </div>
+            
+                <!-- <div class="col-12">
+                    <div class="card">
+                        <button type="submit" class="btn btn-primary"> Guardar Pedido</button>
+                        
+                    </div>
+                </div> -->
+           
+        </div>
+
+        <!-- Este es el footer -->
+        <footer class="footer bg-dark rounded-top text-center gradient">
+            <div class="container py-2">
+                <p class="text-white my-2">
+                    &copy;Axis - 2021
+                </p>
+            </div>
+        </footer>
+</body>
+
+</html>
