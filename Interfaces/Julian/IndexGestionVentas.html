@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axis</title>
+    <script async type="text/javascript" src = "./Js/Funciones.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../axis/css/main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../axis/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../axis/dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition">
+
+    <!-- Este es el header donde va el navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark gradient">
+        <a class="navbar-brand" href="#">Axis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Vendedores</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li><a href="./login.html" class="btn btn-primary">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col"># Venta</th>
+                <th scope="col">Fecha creacion</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Medio de pago</th>
+                <th scope="col">Vendedor</th>
+                <th scope="col">Cliente</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>V0001</td>
+                <td>27/09/2021</td>
+                <td>Entregado</td>
+                <td>Efectivo</td>
+                <td>Julian ortiz</td>
+                <td>Andres martinez</td>
+                <td>
+                    <button type="button" class="btn btn-info " onclick="Redireccionar"  id="Redireccionar">Detalles</button>
+                    <button type="button" class="btn btn-success" onclick="RedireccionarEdit"  id="RedireccionarEdit">Editar</button>
+                    
+                </td>
+              </tr>
+              <tr>
+                <td>V0002</td>
+                <td>27/09/2021</td>
+                <td>Entregado</td>
+                <td>Credito</td>
+                <td>Julian ortiz</td>
+                <td>Alejadnro ayala</td>
+                <td>
+                    <button type="button" class="btn btn-info">Detalles</button>
+                    <button type="button" class="btn btn-success">Editar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>V0003</td>
+                <td>27/09/2021</td>
+                <td>Entregado</td>
+                <td>Credito</td>
+                <td>Julian ortiz</td>
+                <td>Andres Coronado</td>
+                <td>
+                    <button type="button" class="btn btn-info">Detalles</button>
+                    <button type="button" class="btn btn-success">Editar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <!-- Este es el footer -->
+    <footer class="footer bg-dark rounded-top text-center gradient">
+        <div class="container py-2">
+            <p class="text-white my-2">
+                &copy;Axis - 2021
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
