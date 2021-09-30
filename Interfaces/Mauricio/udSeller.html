@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registro de usuario</title>
+    <title>Información personal</title>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../axis/css/main.css">
@@ -47,13 +47,9 @@
     </nav>
     <form action="/action_page.php"></form>
         <div class="container">
-            <h1>Registro</h1>
-            <p>Por favor llena todos los campos.</p>
-                
-            <label for="Nombre"><b>Nombre</b></label>
-            <input type="text" placeholder="Nombre" name="Fname" id="fname" required><br>
-            <label for="Apellido"><b>Apellido</b></label>
-            <input type="text" placeholder="Apellido" name="Lname" id="Lname" required><br>
+            <h1>Información personal</h1>
+            <p>Actualice la información adicional requerida</p>
+        
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Email" name="email" id="email" required><br>
             <label for="phone"><b>Celular</b></label>
@@ -61,23 +57,11 @@
             <label for="Especialidad"><b>Especialidad</b></label>
             <input type="text" placeholder="Especialidad" name="esp" id="esp" required><br>
             <label for="Numero de cuenta"><b>Numero de cuenta</b></label>
-            <input type="text" placeholder="Numero de cuenta" name="accountNumber" id="accountNumber" required><br><br>
-            <label for="fechaDeNacimiento"><b>Fecha de Nacimiento</b></label>
-            <input type="date" placeholder="dd/mm/yyyy" name="bdate" id="bdate" required><br><br>
+            <input type="text" placeholder="Numero de cuenta" name="accountNumber" id="accountNumber" required><br><br>    
             <label for="psw"><b>Contrasena</b></label>
             <input type="password" placeholder="Contrasena" name="psw" id="psw" required><br><br>
             <label for="psw-repeat"><b>Repetir Contrasena</b></label>
             <input type="password" placeholder="Repetir contrasena" name="psw-repeat" id="psw-repeat" required><br><br>
-            <label for="Rol"><b>Escoger Rol:</b></label>
-            <select name="roles" id="roles">
-                <option value="vendedor">Vendedor</option>
-                <option value="administrador">Administrador</option>
-                <option value="ejecutivo">Ejecutivo</option>
-                <option value="operario">Operario</option>
-                <option value="director">Director</option>
-                <option value="gerenteComercial">Gerente Comercial</option>
-                <option value="Seguridad">Seguridad</option>
-            </select><br><br>
             <label for="Ahorros/Corriente"><b>Escoger tipo de cuenta:</b></label>
             <select name="Ahorros/Corriente" id="Ahorros/Corriente">
                 <option value="Ahorros">Ahorros</option>
@@ -91,11 +75,8 @@
                 <option value="BBVA">BBVA</option>
                 <option value="Bancolombia">Bancolombia</option>
             </select><br><br><br>
-            <p>Al crear la cuenta aceptas <a href="#">Terminos & Privacidad</a>.</p>
-            <button type="submit" class="registerbtn">Registrarse</button>
-            <div class="container signin">
-                <p>Ya tienes una cuenta? <a href="#">Login</a>.</p>
-            </div>
+            <a href="wcSeller.html">Regresar</a>
+            <button type="submit" class="confirmButton" id="confirmButton">Actualizar</button>
         </div>  
     </form> 
     <footer class="footer bg-dark rounded-top text-center gradient">
