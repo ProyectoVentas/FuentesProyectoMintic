@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ventas por vendedor</title>
-    <script async type="text/javascript" src="./codigo js/funcionesUpdateDelete.js"></script>
+    <title>Clientes</title>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../axis/css/main.css">
     <!-- Font Awesome -->
+
     <link rel="stylesheet" href="../axis/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../axis/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="./css/formato.css">
+
 </head>
 
 <body class="hold-transition">
@@ -38,8 +38,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#"> Gestion Ventas</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gestion Roles</a>
+
                 </li>
             </ul>
             <ul class="navbar-nav navbar-right">
@@ -48,44 +47,46 @@
         </div>
     </nav>
 
-   
+    <div>
 
-    <form action="/action_page.php">
-   
-        <div class="container">
-          <h1>Informacion  vendedor id</h1>
-          <p>Solo lectura</p>
-          <hr>
-          <div>
-            <table>
-                <tr>
-                  <th>IU Vendedor</th>
-                  <th><a href="./salesStates.html">Ventas en proceso</a></th>
-                  <th>Ventas canceladas</th>
-                  <th>Ventas confirmadas</th>
-                  <th>Reputación</th>
-                  <th>Tiempo de actividad</th>
-                </tr>
-                <tr>
-                  <td>msherrerap</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>107</td>
-                  <td>4,5/5</td>
-                  <td>174 días</td>
-                </tr>
-               
-              </table>
+        <form>
+            <div class="card card-danger">
+                <div class="card-body">
+                    <h2>Registrar Cliente</h2><br>
+                    <div class="row">
+
+                        <div class="col-5">
+                            <label>Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre o Identificacion">
+                        </div>
+
+                        <div class="col-5">
+                            <label for="exampleInputEmail1">Apellido</label>
+                            <input type="email" class="form-control" id="" placeholder="Enter email">
+                        </div>
+                        <div class="col-5">
+                            <label for="">Direccion</label>
+                            <input type="email" class="form-control" id="" placeholder="Enter email">
+                        </div>
+                        <div class="col-5">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" id="" placeholder="Enter email">
+                        </div>
+                        <div class="col-5">
+                            <label for="exampleInputPassword1">Telefono</label>
+                            <input type="password" class="form-control" id="" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <br><br>
+                            <button type="submit" class="btn btn-primary">Guardar Cliente</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-              
-        <hr>
-        <a href="wcSeller.html">Regresar</a>
+        </form>
     </div>
-        
-    
-          
-       
-      </form>
+
+    </div>
 
     <!-- Este es el footer -->
     <footer class="footer bg-dark rounded-top text-center gradient">
