@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Axis</title>
-
+    <script async type="text/javascript" src = "./FuncionesDetails.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../axis/css/main.css">
     <!-- Font Awesome -->
@@ -44,39 +44,49 @@
         <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th scope="col"># Venta</th>
-                <th scope="col">Fecha creacion</th>
-                <th scope="col">Embalaje</th>
-                <th scope="col">Despacho ruta</th>
-                <th scope="col">Ubicacion</th>
-                <th scope="col">Estado</th>
-                <th scope="col">Ruta</th>
-                <th scope="col">Medio de pago</th>
-                <th scope="col">Vendedor</th>
-                <th scope="col">Cliente</th>
+                <th scope="col">Item</th>
+                <th scope="col">Campo</th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>V0001</td>
-                <td>27/09/2021</td>
-                <td>No</td>
-                <td>En proceso</td>
-                <td>calle falsa 123</td>
-                <td>Entregado</td>
-                <td>Efectivo</td>
-                <td>Julian ortiz</td>
-                <td>Andres martinez</td>
-                <td>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                    <button type="button" class="btn btn-primary">Cancelar</button>
-                </td>
+                <td><label for="fname">Fecha de creacion:</label></td>
+                <td><input placeholder="27/08/2021"></td>
               </tr>
+              <tr>
+                <td><label for="fname">Embalaje:</label></td>
+                <td><input placeholder="No"></td>
+              </tr>
+              <tr>
+                <td><label for="fname">Despacho Ruta:</label></td>
+                <td><input placeholder="En proceso"></td>
+              </tr>
+              <tr>
+                <td><label for="fname">Ubicacion:</label></td>
+                <td><input placeholder="Calle falsa 123"></td>
+              </tr>
+              <tr>
+                <td><label for="fname">Estado:</label></td>
+                <td><input placeholder="Entregado"></td>
+              </tr>
+              <tr>
+                <td><label for="fname">Medio de pago:</label></td>
+                <td><input placeholder="Efectivo"></td>
+              </tr>
+              <tr>
+                <td><label for="fname">Vendedor:</label></td>
+                <td><input placeholder="Julian Ortiz"></td>
+              </tr>
+              <tr>
+                <td><label for="fname">Cliente:</label></td>
+                <td><input placeholder="Andres Martinez"></td>
+            
             </tbody>
           </table>
           <div>
-            <button type="button" class="btn btn-danger" >Volver</button>
+            <button type="button" class="btn btn-success"  onclick="Guardar",  id="Guardar" >Guardar</button>
+            <button type="button" class="btn btn-primary" onclick="VolverIndex",  id="VolverIndex">Cancelar</button>
           </div>
     </div>
 
