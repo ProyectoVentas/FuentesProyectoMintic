@@ -14,9 +14,13 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="../axis/dist/css/adminlte.min.css">
 
+    <link rel="stylesheet" href="./CSS/formato.css">
+
+    <script async type="text/javascript" src = "./Js/botonNuevoCliente.js"></script>
+
 </head>
 
-<body class="hold-transition">
+<body >
 
     <!-- Este es el header donde va el navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark gradient">
@@ -54,17 +58,20 @@
         </div>
     </nav>
 
-    <div>
-        <div class="card card-danger">
+    
+       
             
             <div class="card-body">
                 <label>Id:{123456}     Nuevo Pedido</label> <label>ID Vendedor:  {idVendedor}</label>
+            </div>
+            
+            <hr>
                 <div class="row">
                     
                     <div class="col-5">
                         <label>Cliente</label>
                         <input type="text" class="form-control" placeholder="Nombre o Identificacion">
-                        <button type="submit" class="btn btn-primary"> Nuevo Cliente +</button>
+                        
 
                     </div>
                     
@@ -82,25 +89,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
-
                     </div>
+                    <div>
+                    <button type="button" class="btn btn-primary" id="nuevoCliente"> Nuevo Cliente +</button>
                 </div>
-            </div>
+                    
+              
             <!-- /.card-body -->
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Productos agregados</h3>
-                        <div class="card-tools">
-                            <div class="input-group input-group-sm" style="width: 150px;">
-                                <button type="submit" class="btn btn-primary"> Agregar Productos</button>
-                            </div>
-                        </div>
-                    </div>
+    
+            <table class="tabla">
+                <tr>
+                    
+                    <br>
+                    <label>Agregar productos</label>
+                  <th> <input type="text" class="form-control" placeholder="Nombre o codigo"></th>
+                  <th><button type="submit" class="btn btn-primary"> Agregar producto</button></th>
+                </tr>
+                </table>
+      
                     <!-- /.card-header -->
                     <div class="card-body table-responsive p-0">
                         <table class="table table-hover text-nowrap">
@@ -146,16 +152,9 @@
                         </table>
                     </div>
                     
-                    <!-- /.card-body -->
-                </div>
-                <div class="col-12">
-                    <div class="card">
-                        <button type="submit" class="btn btn-primary"> Guardar Pedido</button>
-                        
-                    </div>
-                </div>
-                <!-- /.card -->
-            </div>
+                            <button type="submit" class="guardar-pedido">Comprar</button>
+                            
+             
             
                 <!-- <div class="col-12">
                     <div class="card">
@@ -164,9 +163,8 @@
                     </div>
                 </div> -->
            
-        </div>
-
-        <!-- Este es el footer -->
+        
+       
         <footer class="footer bg-dark rounded-top text-center gradient">
             <div class="container py-2">
                 <p class="text-white my-2">
@@ -174,6 +172,10 @@
                 </p>
             </div>
         </footer>
+    
+
+        <!-- Este es el footer -->
+      
 </body>
 
 </html>
