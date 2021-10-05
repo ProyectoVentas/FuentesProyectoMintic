@@ -18,14 +18,14 @@ function TablaIntegrantes(){
     <div class="container">
 
     <table class="table table-hover" >
-        <thead>
+        
           <tr>
             
             <th scope="col">Nombre</th>
             <th scope="col">Email</th>
             
           </tr>
-        </thead>
+        
         <tbody>
           <tr>
            
