@@ -1,0 +1,37 @@
+form{
+  padding-top: 60px;
+}
+
+form .h3{
+  text-align: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin-bottom: 60px;
+  }
+
+
+
+.container{
+    position:static;
+}
+
+.guardar-pedido {
+
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    box-shadow: none;
+    padding: 16px 20px;
+    
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .tabla th{
+      width: 75%;
+
+  }
