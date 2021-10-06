@@ -1,5 +1,5 @@
 import React from "react";
-import './styleshome/css/main.css'
+
 import './styleshome/css/formatoHome.css'
 import './styleshome/plugins/fontawesome-free/css/all.min.css'
 import './styleshome/dist/css/adminlte.min.css'
@@ -7,15 +7,16 @@ import './styleshome/dist/css/adminlte.min.css'
 function TablaIntegrantes(){
     return(
         <div>
-        <h1>Equipo 4</h1>
-
-    <h2>Proyecto Ventas</h2>
-
-    <h3> Integrantes del grupo</h3>
-
-    <br/>
-
+      
+     
     <div class="container">
+    <h1 class='tituloHome'>Equipo 4</h1>
+
+<h2>Proyecto Ventas</h2>
+
+<h3> Integrantes del grupo</h3>
+
+<br/>
 
     <table class="table table-hover" >
         
