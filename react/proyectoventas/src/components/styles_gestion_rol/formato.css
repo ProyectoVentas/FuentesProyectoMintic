@@ -16,8 +16,8 @@ body {
     position:static;
 }
 
-.container h1{
-  text-align: left;
+.container p{
+  text-align: center;
 }
 
 input[type=text], input[type=password], input[type=date],  input[type=phone]{
