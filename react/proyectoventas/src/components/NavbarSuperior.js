@@ -11,7 +11,7 @@ render(){
     return(
         <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark gradient">
-        <a className="navbar-brand" href="#">Axis</a>
+        <Link to="/home"><a className="navbar-brand" href="#">Axis</a></Link>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
@@ -28,10 +28,10 @@ render(){
                 <Link to="/home/gestionRoles"> <a className="nav-link" >Gestion Roles</a></Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" >Gestion de productos</a>
+                <Link to="/home/gestionproductos"><a className="nav-link" >Gestion de productos</a></Link> 
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" >Compras</a>
+                <a className="nav-link" >Compras</a>
                 </li>
                 </ul>
                 <ul class="navbar-nav navbar-right">
