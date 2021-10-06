@@ -8,6 +8,7 @@ import './styleshome/dist/css/adminlte.min.css'
 class RegistrarseForm extends React.Component{
     render(){
         return(
+          <form action="/action_page.php">
             <div class="container">
           <h1>Registro</h1>
           <p>Por favor llena todos los campos.</p>
@@ -71,7 +72,7 @@ class RegistrarseForm extends React.Component{
         
           </div>
     
-    
+    </form>
         )
     }
     
