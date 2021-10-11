@@ -8,7 +8,7 @@ import NavbarSuperior from "./NavbarSuperior";
 import FooterPrincipal from "./FooterPrincipal";
 import Login from "../Pages/Login";
 import GestionProductos from "../Pages/GestionProductos";
-
+import AgregarCliente from "../Pages/AgregarCliente";
 
 
 import {BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
@@ -30,7 +30,8 @@ function App(){
         <Route exact path='/home/login/forgotPassword' component={ForgotPassword}/>
         <Route exact path='/home/login/registrarse' component={Registrarse}/>
         <Route exact path='/home/gestionproductos' component={GestionProductos}/>
-        
+        <Route exact path='/home/comprar/agregarcliente' component={AgregarCliente}/>
+
         </Switch>
         </div>
         <FooterPrincipal/>
