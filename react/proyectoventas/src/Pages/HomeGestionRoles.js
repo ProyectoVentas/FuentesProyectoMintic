@@ -1,7 +1,7 @@
 import React from "react";
+import TablaRol from "../components/TablaRol";
 
-import BuscarRolInput from "../components/BuscarRolInput";
-import Buscar from "../components/ButtonBuscarEmpleadoRoles";
+
 
 
 class HomeGestionRoles extends React.Component{
@@ -10,10 +10,9 @@ class HomeGestionRoles extends React.Component{
             <div>
             
             
-<BuscarRolInput/>
-<Buscar/>
 
 
+<TablaRol/>
            
             
             
