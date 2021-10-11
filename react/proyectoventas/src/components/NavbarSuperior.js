@@ -31,7 +31,7 @@ render(){
                 <Link to="/home/gestionproductos"><a className="nav-link" >Gestion de productos</a></Link> 
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" >Compras</a>
+                <Link to="/home/comprar"> <a className="nav-link" >Compras</a></Link>
                 </li>
                 </ul>
                 <ul class="navbar-nav navbar-right">

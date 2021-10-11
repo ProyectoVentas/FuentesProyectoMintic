@@ -9,6 +9,7 @@ import FooterPrincipal from "./FooterPrincipal";
 import Login from "../Pages/Login";
 import GestionProductos from "../Pages/GestionProductos";
 import AgregarCliente from "../Pages/AgregarCliente";
+import Comprar from "../Pages/Comprar";
 
 
 import {BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
@@ -31,6 +32,7 @@ function App(){
         <Route exact path='/home/login/registrarse' component={Registrarse}/>
         <Route exact path='/home/gestionproductos' component={GestionProductos}/>
         <Route exact path='/home/comprar/agregarcliente' component={AgregarCliente}/>
+        <Route exact path='/home/comprar' component={Comprar}/>
 
         </Switch>
         </div>
