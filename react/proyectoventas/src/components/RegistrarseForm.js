@@ -1,9 +1,7 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
-
-import './styles_gestion_rol/formato.css'
-import './styleshome/plugins/fontawesome-free/css/all.min.css'
-import './styleshome/dist/css/adminlte.min.css'
+import '../components/styles_gestion_rol/formato.css'
 
 const data=[]
 
@@ -135,7 +133,7 @@ const RegistrarseForm = () => {
          
       <div>
                     <p>Al crear la cuenta aceptas <a href="#">Terminos & Privacidad</a>.</p>
-                    <button type="submit" class="registerbtn" onClick={insertar}>Registrarse</button>
+                  <Link to="/home/login/registrarse/confirmation">  <button type="submit" class="registerbtn" onClick={insertar}>Registrarse</button></Link>
           
         </div>
         <div class="container signin">
