@@ -11,7 +11,7 @@ import GestionProductos from "../Pages/GestionProductos";
 
 
 import IndexVentas from "../Pages/IndexVentas";
-
+import ConfirmacionRegistro from "../Pages/ConfirmacionRegistro";
 
 
 import {BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
@@ -31,6 +31,8 @@ function App(){
         <Route exact path='/home/login' component={Login}/>
         <Route exact path='/home/login/forgotPassword' component={ForgotPassword}/>
         <Route exact path='/home/login/registrarse' component={Registrarse}/>
+        <Route exact path='/home/login/registrarse/confirmation' component={ConfirmacionRegistro}/>
+
         <Route exact path='/home/gestionproductos' component={GestionProductos}/>
 
         <Route exact path='/home/indexventas' component={IndexVentas}/>
