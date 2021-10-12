@@ -16,11 +16,11 @@
 
     <link rel="stylesheet" href="./CSS/formato.css">
 
-    <script async type="text/javascript" src = "./Js/botonNuevoCliente.js"></script>
+    <script async type="text/javascript" src="./Js/botonNuevoCliente.js"></script>
 
 </head>
 
-<body >
+<body>
 
     <!-- Este es el header donde va el navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark gradient">
@@ -46,10 +46,10 @@
                     <a class="nav-link" href="../Andres/buscarUsuario.html">Gestion Roles</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../Alejandra/moduloProductos.html">Gestion de productos</a>
+                    <a class="nav-link" href="../Alejandra/moduloProductos.html">Gestion de productos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../Alejandra/rVenta.html">Compras</a>
+                    <a class="nav-link" href="../Alejandra/rVenta.html">Compras</a>
                 </li>
             </ul>
             <ul class="navbar-nav navbar-right">
@@ -58,124 +58,122 @@
         </div>
     </nav>
 
-    
-       
-            
-            <div class="card-body">
-                <label>Id:{123456}     Nuevo Pedido</label> <label>ID Vendedor:  {idVendedor}</label>
-            </div>
-            
-            <hr>
-                <div class="row">
-                    
-                    <div class="col-5">
-                        <label>Cliente</label>
-                        <input type="text" class="form-control" placeholder="Nombre o Identificacion">
-                        
 
-                    </div>
-                    
 
-                    <div class="col-5">
-                        <div class="form-group">
-                            <label>Date:</label>
-                            <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input"
-                                    data-target="#reservationdate" />
-                                <div class="input-group-append" data-target="#reservationdate"
-                                    data-toggle="datetimepicker">
-                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                </div>
-                            </div>
-                        </div>
+
+    <div class="card-body">
+        <label>Id:{123456} Nuevo Pedido</label> <label>ID Vendedor: {idVendedor}</label>
+    </div>
+
+    <hr>
+    <div class="row">
+
+        <div class="col-5">
+            <label>Cliente</label>
+            <input type="text" class="form-control" placeholder="Nombre o Identificacion">
+
+
+        </div>
+
+
+        <div class="col-5">
+            <div class="form-group">
+                <label>Date:</label>
+                <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" />
+                    <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                     </div>
-                    </div>
-                    <div>
-                    <button type="button" class="btn btn-primary" id="nuevoCliente"> Nuevo Cliente +</button>
                 </div>
-                    
-              
-            <!-- /.card-body -->
-    
-            <table class="tabla">
+            </div>
+        </div>
+    </div>
+    <div>
+        <button type="button" class="btn btn-primary" id="nuevoCliente"> Nuevo Cliente +</button>
+    </div>
+
+
+    <!-- /.card-body -->
+
+    <table class="tabla">
+        <tr>
+
+            <br>
+            <label>Agregar productos</label>
+            <th> <input type="text" class="form-control" placeholder="Nombre o codigo"></th>
+            <th><button type="submit" class="btn btn-primary"> Agregar producto</button></th>
+        </tr>
+    </table>
+
+    <!-- /.card-header -->
+    <div class="card-body table-responsive p-0">
+        <table class="table table-hover text-nowrap">
+            <thead>
                 <tr>
-                    
-                    <br>
-                    <label>Agregar productos</label>
-                  <th> <input type="text" class="form-control" placeholder="Nombre o codigo"></th>
-                  <th><button type="submit" class="btn btn-primary"> Agregar producto</button></th>
+                    <th>id producto</th>
+                    <th>cantidad</th>
+                    <th>valor u</th>
+                    <th>valor total</th>
+
                 </tr>
-                </table>
-      
-                    <!-- /.card-header -->
-                    <div class="card-body table-responsive p-0">
-                        <table class="table table-hover text-nowrap">
-                            <thead>
-                                <tr>
-                                    <th>id producto</th>
-                                    <th>cantidad</th>
-                                    <th>valor u</th>
-                                    <th>valor total</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>183</td>
+                    <td>John Doe</td>
+                    <td>11-7-2014</td>
+                    <td><span class="tag tag-success">Approved</span></td>
 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>183</td>
-                                    <td>John Doe</td>
-                                    <td>11-7-2014</td>
-                                    <td><span class="tag tag-success">Approved</span></td>
+                </tr>
+                <tr>
+                    <td>219</td>
+                    <td>Alexander Pierce</td>
+                    <td>11-7-2014</td>
+                    <td><span class="tag tag-warning">Pending</span></td>
 
-                                </tr>
-                                <tr>
-                                    <td>219</td>
-                                    <td>Alexander Pierce</td>
-                                    <td>11-7-2014</td>
-                                    <td><span class="tag tag-warning">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>657</td>
+                    <td>Bob Doe</td>
+                    <td>11-7-2014</td>
+                    <td><span class="tag tag-primary">Approved</span></td>
 
-                                </tr>
-                                <tr>
-                                    <td>657</td>
-                                    <td>Bob Doe</td>
-                                    <td>11-7-2014</td>
-                                    <td><span class="tag tag-primary">Approved</span></td>
+                </tr>
+                <tr>
+                    <td>175</td>
+                    <td>Mike Doe</td>
+                    <td>11-7-2014</td>
+                    <td><span class="tag tag-danger">Denied</span></td>
 
-                                </tr>
-                                <tr>
-                                    <td>175</td>
-                                    <td>Mike Doe</td>
-                                    <td>11-7-2014</td>
-                                    <td><span class="tag tag-danger">Denied</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                            <button type="submit" class="guardar-pedido">Comprar</button>
-                            
-             
-            
-                <!-- <div class="col-12">
+    <button type="submit" class="guardar-pedido">Comprar</button>
+
+
+
+    <!-- <div class="col-12">
                     <div class="card">
                         <button type="submit" class="btn btn-primary"> Guardar Pedido</button>
                         
                     </div>
                 </div> -->
-           
-        
-       
-        <footer class="footer bg-dark rounded-top text-center gradient">
-            <div class="container py-2">
-                <p class="text-white my-2">
-                    &copy;Axis - 2021
-                </p>
-            </div>
-        </footer>
-    
 
-        <!-- Este es el footer -->
-      
+
+
+    <footer class="footer bg-dark rounded-top text-center gradient">
+        <div class="container py-2">
+            <p class="text-white my-2">
+                &copy;Axis - 2021
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Este es el footer -->
+
 </body>
 
 </html>
