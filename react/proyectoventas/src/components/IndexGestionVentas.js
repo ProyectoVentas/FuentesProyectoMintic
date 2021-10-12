@@ -8,7 +8,7 @@ const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 const PATH_VENTAS = process.env.REACT_APP_API_VENTAS_PATH;
 
 const IndexGestionVentas = () => {
-
+    var modal = document.getElementById("myModal");
     const [modalActualizar, setModalActualizar] = React.useState(false);
     const [newVal, setNewVal] = React.useState(0);
      
@@ -47,43 +47,43 @@ const IndexGestionVentas = () => {
           ...usuario,
           form: userToModify
         });
-        setModalActualizar(true);
+        modal.style.display = "block";
       };
     
       const cerrarModalActualizar = () => {
-        setModalActualizar(false);
+        modal.style.display = "none";
       };
     
   
     
       const editar = () => {
         let usuarioAModificar = { ...usuario.form };
-        actualizarCustomer(usuarioAModificar);
-        setModalActualizar(false);
+        actualizarVentas(usuarioAModificar);
+        modal.style.display = "none";
       };
     
       const eliminar = (e) => {
         let arregloUsuarios = usuario.data;
         arregloUsuarios.map((registro) => {
           if (e.target.id === registro._id) {
-            let opcion = window.confirm("¿Está seguro que desea eliminar el valor " + registro.firstName + "?");
+            let opcion = window.confirm("¿Está seguro que desea eliminar el valor " + registro.fechaCreacion + "?");
             if (opcion) {
-              borrarCustomer(registro._id);
+              borrarVentas(registro._id);
             }
           }
           
         });
       };
     
-      const actualizarCustomer = (customer) => {
+      const actualizarVentas = (ventas) => {
         const requestOptions = {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(customer)
+          body: JSON.stringify(ventas)
         };
-        fetch(`${BASE_URL}${PATH_CUSTOMERS}/${customer._id}`, requestOptions)
+        fetch(`${BASE_URL}${PATH_VENTAS}/${ventas._id}`, requestOptions)
           .then(result => result.json())
           .then(
             (result) => {
@@ -104,7 +104,7 @@ const IndexGestionVentas = () => {
             'Content-Type': 'application/json'
           },
         };
-        fetch(`${BASE_URL}${PATH_CUSTOMERS}`, requestOptions)
+        fetch(`${BASE_URL}${PATH_VENTAS}`, requestOptions)
           .then(res => res.json())
           .then(
             (result) => {
@@ -122,14 +122,14 @@ const IndexGestionVentas = () => {
       }, [newVal]);
     
     
-      const borrarCustomer = (id) => {
+      const borrarVentas = (id) => {
         const requestOptions = {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json'
           }
         };
-        fetch(`${BASE_URL}${PATH_CUSTOMERS}/${id}`, requestOptions)
+        fetch(`${BASE_URL}${PATH_VENTAS}/${id}`, requestOptions)
           .then(result => result.json())
           .then(
             (result) => {
@@ -191,7 +191,7 @@ const IndexGestionVentas = () => {
             <hr/>
             </div>
     </container>
-  
+    <div id="myModal" class="modales">
   <modal isOpen={modalActualizar} >
   <div id="modalb">
   <modalheader>
@@ -243,13 +243,13 @@ const IndexGestionVentas = () => {
        <label for="medioPago"><b>Medio de pago</b></label>
            <input type="String" placeholder="medioPago" name="medioPago" id="medioPago" required onChange={handleChange} value={usuario.form.medioPago}/>
        </formgroup>
-  
+       <br/>
        <formgroup>
          
        <label for="vendedor"><b>Vendedor</b></label>
            <input type="String" placeholder="vendedor" name="vendedor" id="vendedor" required onChange={handleChange} value={usuario.form.vendedor}/>
        </formgroup>
-
+       <br/>
        <formgroup>
          
        <label for="cliente"><b>Cliente</b></label>
@@ -258,7 +258,7 @@ const IndexGestionVentas = () => {
   
     
   </modalbody>
-  
+  <br/>
   <modalfooter>
     <button
       color="primary"
@@ -276,6 +276,7 @@ const IndexGestionVentas = () => {
   </modalfooter>
   </div>
   </modal>
+  </div>
   </div>
   
       );
