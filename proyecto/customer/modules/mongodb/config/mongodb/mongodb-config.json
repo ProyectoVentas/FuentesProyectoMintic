@@ -1,0 +1,10 @@
+{
+    "mongodb": {
+      "server": "cluster0.f7ac6.mongodb.net",
+      "database": "myFirstDatabase?retryWrites=true&w=majority",
+      "user": "proyectoventas",
+      "password": "proyectoventas123"
+    }
+  }
+
+
