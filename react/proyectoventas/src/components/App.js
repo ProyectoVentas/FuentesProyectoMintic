@@ -7,8 +7,12 @@ import NavbarSuperior from "./NavbarSuperior";
 import FooterPrincipal from "./FooterPrincipal";
 import Login from "../Pages/Login";
 import GestionProductos from "../Pages/GestionProductos";
+
+
+
 import IndexVentas from "../Pages/IndexVentas";
 import ConfirmacionRegistro from "../Pages/ConfirmacionRegistro";
+
 
 import {BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
@@ -30,8 +34,10 @@ function App(){
         <Route exact path='/home/login/registrarse/confirmation' component={ConfirmacionRegistro}/>
 
         <Route exact path='/home/gestionproductos' component={GestionProductos}/>
+
         <Route exact path='/home/indexventas' component={IndexVentas}/>
         
+
         </Switch>
         </div>
         <FooterPrincipal/>
