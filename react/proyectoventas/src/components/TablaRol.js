@@ -9,8 +9,8 @@ const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 const PATH_CUSTOMERS = process.env.REACT_APP_API_CUSTOMERS_PATH;
 
 const TablaRol = () => {
-
-  const [modalActualizar, setModalActualizar] = React.useState(false);
+  var modal = document.getElementById("myModal");
+  const [modalActualizar] = React.useState(false);
   const [newVal, setNewVal] = React.useState(0);
    
     const [usuario, setUsuario] = React.useState({
@@ -47,11 +47,11 @@ const TablaRol = () => {
         ...usuario,
         form: userToModify
       });
-      setModalActualizar(true);
+      modal.style.display = "block";
     };
   
     const cerrarModalActualizar = () => {
-      setModalActualizar(false);
+      modal.style.display = "none";
     };
   
 
@@ -59,14 +59,14 @@ const TablaRol = () => {
     const editar = () => {
       let usuarioAModificar = { ...usuario.form };
       actualizarCustomer(usuarioAModificar);
-      setModalActualizar(false);
+      modal.style.display = "none";
     };
   
     const eliminar = (e) => {
       let arregloUsuarios = usuario.data;
       arregloUsuarios.map((registro) => {
         if (e.target.id === registro._id) {
-          let opcion = window.confirm("¿Está seguro que desea eliminar el valor " + registro.firstName + "?");
+          let opcion = window.confirm("¿Está seguro que desea eliminar el valor " + registro.fName + "?");
           if (opcion) {
             borrarCustomer(registro._id);
           }
@@ -188,8 +188,8 @@ const TablaRol = () => {
           <hr/>
           </div>
   </container>
-
-<modal isOpen={modalActualizar} >
+<div id="myModal" class="modales">
+<modal isOpen={modalActualizar} id="modales">
 <div id="modalb">
 <modalheader>
   <div><h3>Actualizar Usuario </h3></div>
@@ -251,7 +251,7 @@ const TablaRol = () => {
 
   
 </modalbody>
-
+<br/>
 <modalfooter>
   <button
     color="primary"
@@ -269,6 +269,7 @@ const TablaRol = () => {
 </modalfooter>
 </div>
 </modal>
+</div>
 </div>
 
     );
