@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 
-import '../components/styles_gestion_rol/formato.css'
+import './styles_gestion_rol/formato.css'
 
 const data=[]
 
@@ -14,8 +14,8 @@ const RegistrarseForm = () => {
   const [usuario, setUsuario] = React.useState({
     data: data,
     form: {
-      Fname: "",
-      Lname: "",
+      fName: "",
+      lName: "",
       email: "",
       phone: "",
       bdate: "",
@@ -87,7 +87,7 @@ const RegistrarseForm = () => {
     
   
         return(
-          <form action="/action_page.php">
+          <form action="/" method='POST'>
             <div class="container">
           <h1>Registro</h1>
           <p>Por favor llena todos los campos.</p>
@@ -102,7 +102,7 @@ const RegistrarseForm = () => {
         </div>
           <div>
           <label for="email"><b>Email</b></label>
-         <input type="String" placeholder="Email" name="email" id="email" required onChange={handleChange}/>
+         <input type="email" placeholder="Email" name="email" id="email" required onChange={handleChange}/>
         </div>
         <div>
         <label for="phone"><b>Celular</b></label>
@@ -117,12 +117,12 @@ const RegistrarseForm = () => {
           <br/>
           <div>
           <label for="psw"><b>Contrasena</b></label>
-          <input type="String" placeholder="Contrasena" name="psw" id="psw" required onChange={handleChange}/>
+          <input type="Password" placeholder="Contrasena" name="psw" id="psw" required onChange={handleChange}/>
         </div>
           <br/>
           <div>
           <label for="psw-repeat"><b>Repetir Contrasena</b></label>
-      <input type="String" placeholder="Repetir contrasena" name="pswrepeat" id="psw-repeat" required onChange={handleChange}/>
+      <input type="Password" placeholder="Repetir contrasena" name="pswrepeat" id="psw-repeat" required onChange={handleChange}/>
         </div>
 <br/>
 <div>
