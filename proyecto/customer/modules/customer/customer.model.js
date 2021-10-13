@@ -1,8 +1,8 @@
 (function () {
     var mongoose = require('mongoose');
-
+    const validator = require('validator');
     var Schema = mongoose.Schema;
-
+    var bcrypt=require('bcrypt');
     var CustomerSchema = new Schema({
         fName: {
             type: String,
@@ -14,7 +14,10 @@
         },
         email: {
             type: String,
-            required: true
+            require: [true, 'Enter an email address.'],
+            unique: [true, 'That email address is taken.'],
+            lowercase: true,
+            validate: [validator.isEmail, 'Enter a valid email address.']
         },
         phone: {
             type: Number,
@@ -23,14 +26,35 @@
 
         bdate:Date,
             
-        psw:String,
-        pswrepeat:String,
+        psw:{
+            type: String,
+            required: [true, 'Enter a password.'],
+            minLength: [4, 'Password should be at least four characters']
+        },
+        pswrepeat:{
+            type: String,
+            required: [true, 'Retype your password.'],
+            validate: {
+                validator: function(el) {
+                    return el === this.psw;
+                }, message: 'Passwords don\'t match.'
+            }
+        },
+            
         roles:String
         }
        
     );
 
-
+    CustomerSchema.pre('save', async function(next) {
+    
+        //hash the password, set hash cost to 12  
+        this.psw = await bcrypt.hash(this.psw, 12);
+    
+        //remove the passwordConfirmed field 
+        this.pswrepeat = undefined; 
+        next();
+    });
    
    
    

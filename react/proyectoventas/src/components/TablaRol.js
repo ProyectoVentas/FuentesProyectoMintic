@@ -1,7 +1,6 @@
 import React from "react";
-import './styles_buscar/formato.css'
-import './styleshome/plugins/fontawesome-free/css/all.min.css'
-import './styleshome/dist/css/adminlte.min.css'
+import'../components/styles_buscar/formato.css'
+
 
 
 const data=[]
@@ -16,8 +15,8 @@ const TablaRol = () => {
     const [usuario, setUsuario] = React.useState({
       data: data,
       form: {
-      Fname: "",
-      Lname: "",
+      fName: "",
+      lName: "",
       email: "",
       phone: "",
       bdate: "",
@@ -159,8 +158,7 @@ const TablaRol = () => {
                 <th>Email</th>
                 <th>Celular</th>
                 <th>Birth Date</th>
-                <th>Contrasena</th>
-                <th>Conf contrasena</th>
+               
                 <th>Roles</th>
                 
               </tr>
@@ -174,8 +172,7 @@ const TablaRol = () => {
                   <td>{dato.email}</td>
                   <td>{dato.phone}</td>
                   <td>{dato.bdate}</td>
-                  <td>{dato.psw}</td>
-                  <td>{dato.pswrepeat}</td>
+              
                   <td>{dato.roles}</td>
                   <td>
                     <button  id={dato._id} class="update" onClick={mostrarModalActualizar}>Actualizar</button>
@@ -212,7 +209,7 @@ const TablaRol = () => {
          <br/>
          <formgroup>
          <label for="email"><b>Email</b></label>
-         <input type="String" placeholder="Email" name="email" id="email" required onChange={handleChange} value={usuario.form.email}/>
+         <input type="email" placeholder="Email" name="email" id="email" required onChange={handleChange} value={usuario.form.email}/>
     
          </formgroup>
          <br/>
@@ -228,18 +225,7 @@ const TablaRol = () => {
             <input type="Date" placeholder="dd/mm/yyyy" name="bdate" id="bdate" required onChange={handleChange} value={usuario.form.bdate}/>    
          </formgroup>
          <br/>
-         <formgroup>
-       
-         <label for="psw"><b>Contrasena</b></label>
-          <input type="String" placeholder="Contrasena" name="psw" id="psw" required onChange={handleChange} value={usuario.form.psw}/>
-       </formgroup>
-       <br/>
-       <formgroup>
-       
-       <label for="psw-repeat"><b>Repetir Contrasena</b></label>
-      <input type="String" placeholder="Repetir contrasena" name="pswrepeat" id="psw-repeat" required onChange={handleChange} value={usuario.form.pswrepeat}/>
-     </formgroup>
-     <br/>
+         
 
      <formgroup>
        
