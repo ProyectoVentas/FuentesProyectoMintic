@@ -7,7 +7,7 @@ import NavbarSuperior from "./NavbarSuperior";
 import FooterPrincipal from "./FooterPrincipal";
 import Login from "../Pages/Login";
 import GestionProductos from "../Pages/GestionProductos";
-
+import Comprar from "../Pages/Comprar"
 
 
 import IndexVentas from "../Pages/IndexVentas";
@@ -34,7 +34,7 @@ function App(){
         <Route exact path='/home/login/registrarse/confirmation' component={ConfirmacionRegistro}/>
 
         <Route exact path='/home/gestionproductos' component={GestionProductos}/>
-
+<Route exact path ='/home/comprar' component={Comprar}/>
         <Route exact path='/home/indexventas' component={IndexVentas}/>
         
 
