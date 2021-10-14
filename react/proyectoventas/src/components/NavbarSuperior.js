@@ -18,7 +18,7 @@ render(){
                 <Link to="/home">    <a className="nav-link" >Home <span className="sr-only">(current)</span></a></Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" >Vendedores</a>
+                    <Link to="/home/indexVendedor"><a className="nav-link" >Vendedores</a></Link>
                 </li>
 
                 <li className="nav-item">
