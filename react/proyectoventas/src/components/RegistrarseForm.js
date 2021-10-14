@@ -35,31 +35,11 @@ const RegistrarseForm = () => {
       }
     }));
   };
-  React.useEffect(() => {
-    const requestOptions = {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    };
-    fetch(`${BASE_URL}${PATH_CUSTOMERS}`, requestOptions)
-      .then(res => res.json())
-      .then(
-        (result) => {
-          //setIsLoaded(true);
-          setUsuario({
-            ...usuario,
-            data: result
-          });
-        },
-        (error) => {
-          //setIsLoaded(true);
-          //setErrors(error);
-        }
-      )
-  }, [newVal]);
+ 
+
 
   const insertar = () => {
+    
     let usuarioACrear = { ...usuario.form };
     const requestOptions = {
       method: 'POST',
@@ -79,14 +59,9 @@ const RegistrarseForm = () => {
           //setErrors(error);
   });}
 
-      
-    
-    
-  
-
-    
   
         return(
+          
           <form action="/" method='POST'>
             <div class="container">
           <h1>Registro</h1>
@@ -112,12 +87,31 @@ const RegistrarseForm = () => {
         
         <div>
             <label for="fechaDeNacimiento"><b>Fecha de Nacimiento</b></label>
-            <input type="Date" placeholder="dd/mm/yyyy" name="bdate" id="bdate" required onChange={handleChange}/>
+            <input type="Date" placeholder="dd/mm/yyyy" name="bdate" id="bdate" required onChange={handleChange} />
         </div>
           <br/>
+          <form method="POST" action="/">      
+<div class="dropdown" id="dropdownRol">
+<label for="Rol"><b>Escoger Rol:</b></label>
+            <select name="rol" id="roles" >
+              <option value="vendedor">Vendedor</option>
+              <option value="administrador">Administrador</option>
+              <option value="ejecutivo">Ejecutivo</option>
+              <option value="operario">Operario</option>
+              <option value="director">Director</option>
+              <option value="gerenteComercial">Gerente Comercial</option>
+              <option value="Seguridad">Seguridad</option>
+            </select>
+            <div>
+            
+        <text></text>
+        </div>
+          </div>
+          </form>      
+
           <div>
           <label for="psw"><b>Contrasena</b></label>
-          <input type="Password" placeholder="Contrasena" name="psw" id="psw" required onChange={handleChange}/>
+          <input type="Password" placeholder="Contrasena" name="psw" id="psw" required onChange={handleChange} />
         </div>
           <br/>
           <div>
@@ -125,15 +119,10 @@ const RegistrarseForm = () => {
       <input type="Password" placeholder="Repetir contrasena" name="pswrepeat" id="psw-repeat" required onChange={handleChange}/>
         </div>
 <br/>
-<div>
-          <label for="roles"><b>Roles</b></label>
-         <input type="String" placeholder="rol" name="roles" id="roles" required onChange={handleChange}/>
-        </div>
-          <hr/>
-         
-      <div>
+
+                        <div>
                     <p>Al crear la cuenta aceptas <a href="#">Terminos & Privacidad</a>.</p>
-                  <Link to="/home/login/registrarse/confirmation">  <button type="submit" class="registerbtn" onClick={insertar}>Registrarse</button></Link>
+                    <Link to="/home/login"><button type="submit" class="registerbtn" onClick={insertar}>Registrarse</button> </Link>
           
         </div>
         <div class="container signin">
@@ -141,11 +130,13 @@ const RegistrarseForm = () => {
           </div>
         
           </div>
+         
     
     </form>
         );
         
         
         }
+     
      
     export default RegistrarseForm
