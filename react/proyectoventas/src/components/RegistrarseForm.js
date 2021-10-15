@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+
+import {Redirect } from 'react-router-dom'
 
 import './styles_gestion_rol/formato.css'
+
+
 
 const data=[]
 
@@ -9,6 +12,8 @@ const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 const PATH_CUSTOMERS = process.env.REACT_APP_API_CUSTOMERS_PATH;
 
 const RegistrarseForm = () => {
+ 
+ 
 
   const [newVal, setNewVal] = React.useState(0);
   const [usuario, setUsuario] = React.useState({
@@ -36,37 +41,59 @@ const RegistrarseForm = () => {
     }));
   };
  
-
-
   const insertar = () => {
-    
+   
+   
     let usuarioACrear = { ...usuario.form };
+    console.log(usuarioACrear);
     const requestOptions = {
       method: 'POST',
+      
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(usuarioACrear)
     };
-    fetch(`${BASE_URL}${PATH_CUSTOMERS}`, requestOptions)
-      .then(
-        (response) => {
-          response.json();
-          setNewVal(newVal + 1);
-        },
-        (error) => {
-          //setIsLoaded(true);
-          //setErrors(error);
-  });}
 
-  
-        return(
+   
+    fetch(`${BASE_URL}${PATH_CUSTOMERS}`, requestOptions)
+   
+      .then(
+       
+        (response) => {
+         
+          response.json();
+            setNewVal(newVal + 1);
+            console.log(response)
+    
+            
+        },
+       
+     
+          (error) => {
+            error.json();
+            console.log(error.message);
           
-          <form action="/" method='POST'>
-            <div class="container">
+          }
+          );
+      }
+
+ 
+
+     
+      
+
+ 
+        return(
+        
+        
+
+
+            <div class="container"  >
           <h1>Registro</h1>
           <p>Por favor llena todos los campos.</p>
           <hr/>
+          <form id='formregistro'>
           <div>
           <label for="Nombre"><b>Nombre</b></label>
          <input type="String" placeholder="Nombre" name="fName" id="fname" required  onChange={handleChange}/>
@@ -90,10 +117,12 @@ const RegistrarseForm = () => {
             <input type="Date" placeholder="dd/mm/yyyy" name="bdate" id="bdate" required onChange={handleChange} />
         </div>
           <br/>
-          <form method="POST" action="/">      
+         
+
+       
 <div class="dropdown" id="dropdownRol">
 <label for="Rol"><b>Escoger Rol:</b></label>
-            <select name="rol" id="roles" >
+            <select name="roles" id="roles" >
               <option value="vendedor">Vendedor</option>
               <option value="administrador">Administrador</option>
               <option value="ejecutivo">Ejecutivo</option>
@@ -103,11 +132,13 @@ const RegistrarseForm = () => {
               <option value="Seguridad">Seguridad</option>
             </select>
             <div>
+
+              
             
         <text></text>
         </div>
           </div>
-          </form>      
+       
 
           <div>
           <label for="psw"><b>Contrasena</b></label>
@@ -122,21 +153,24 @@ const RegistrarseForm = () => {
 
                         <div>
                     <p>Al crear la cuenta aceptas <a href="#">Terminos & Privacidad</a>.</p>
-                    <Link to="/home/login"><button type="submit" class="registerbtn" onClick={insertar}>Registrarse</button> </Link>
-          
+<button type="submit" class="registerbtn" onClick={insertar}>Registrarse</button>
+
+
         </div>
+        </form>
         <div class="container signin">
             <p>Ya tienes una cuenta? <a href="#">Login</a>.</p>
           </div>
         
           </div>
          
-    
-    </form>
+       
+          
+
+        
         );
         
-        
-        }
-     
-     
+      
+            
+}
     export default RegistrarseForm

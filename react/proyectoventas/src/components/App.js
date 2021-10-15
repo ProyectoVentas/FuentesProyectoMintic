@@ -25,16 +25,13 @@ function App(){
 <div>
     <NavbarSuperior/>
     <div>
-    <Redirect
-            from="/"
-            to="/home" />
+ 
         <Switch>
         <Route exact path='/home' component={Home}/>
         <Route exact path='/home/gestionRoles' component={HomeGestionRoles}/>
-        <Route exact path='/home/login' component={Login}/>
-        <Route exact path='/home/login/forgotPassword' component={ForgotPassword}/>
-        <Route exact path='/home/login/registrarse' component={Registrarse}/>
-        <Route exact path='/home/login/registrarse/confirmation' component={ConfirmacionRegistro}/>
+        <Route exact path='/login' component={Login}/>
+        <Route exact path='/login/forgotPassword' component={ForgotPassword}/>
+        <Route exact path='/registrarse' component={Registrarse}/>
         <Route exact path='/home/indexVendedor' component={Vendedores}/>   
         <Route exact path='/home/indexVendedor/udVendedor' component={UdSeller}/>
         <Route exact path='/home/indexVendedor/salesBySeller' component={SalesBySeller}/> 
