@@ -57,10 +57,10 @@ render(){
                     </form>
     
                     <p class="mb-1">
-                    <Link to="/home/login/forgotPassword"><a >Olvidé mi contraseña</a> </Link>
+                    <Link to="/login/forgotPassword"><a >Olvidé mi contraseña</a> </Link>
                     </p>
                     <p class="mb-1">
-                    <Link to="/home/login/registrarse"> <a >Registrarse</a></Link>
+                    <Link to="/registrarse"> <a >Registrarse</a></Link>
                     </p>
                 </div>
                 
