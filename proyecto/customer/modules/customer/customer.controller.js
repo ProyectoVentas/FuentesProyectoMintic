@@ -9,8 +9,11 @@
     router.post('/',
         CustomerMiddleware.addCustomer,
         function (req, res) {
+           
             res.status(201).json(req.response);
+          
         });
+
 
     router.get('/',
         CustomerMiddleware.getCustomers,
