@@ -35,7 +35,7 @@ render(){
                 </li>
                 </ul>
                 <ul class="navbar-nav navbar-right">
-                <Link to="/home/login"><li><a class="btn btn-primary">Login</a></li></Link>
+                <Link to="/login"><li><a class="btn btn-primary">Login</a></li></Link>
             
 
             </ul>
