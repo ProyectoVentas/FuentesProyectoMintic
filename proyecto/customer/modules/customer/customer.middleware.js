@@ -26,8 +26,8 @@
 
         function failure(error) {
          console.log(error)
-            req.response=error;
-            next(error);
+            req.response=({error:'001', message:"Really"});
+            next(error.json());
         }
 
     }
