@@ -18,12 +18,16 @@
             .catch(failure);
 
         function success(data) {
+            
             req.response = data;
+            console.log(req.response)
             next();
         }
 
         function failure(error) {
-            next(error);
+         console.log(error)
+            req.response=({error:'001', message:"Really"});
+            next(error.json());
         }
 
     }

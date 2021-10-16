@@ -1,0 +1,130 @@
+
+
+  #comprarForm{
+    padding-top: 60px;
+  }
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+
+
+.container{
+padding-top: 60px;
+  position:static;
+}
+
+.container p{
+text-align: center;
+}
+
+#roles{
+  width: 12%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 15px;
+
+}
+
+
+
+
+input[type=String],  input[type=Date],  input[type=Number], input[type=Password], input[type=email]{
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border:none;
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+.dropdown .select option {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+ .registerbtn {
+  background-color: #007bff;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+.searchButton {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+
+.confirmButton{
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 15px;
+
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  border-radius: 15px;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  border-radius: 15px;
+}
+
+table{
+    width: 75%;
+}
+tr{
+    text-align: center;
+}
+td{
+    text-align: center;
+}
