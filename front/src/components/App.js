@@ -41,9 +41,7 @@ function App(){
         <Route exact path='/home/gestionproductos' component={GestionProductos}/>
 <Route exact path='/home/comprar' component={Comprar}/>
         <Route exact path='/home/indexventas' component={IndexVentas}/>
-        <Route exact path='/home/indexVendedor/udVendedor' component={UdSeller}/>
-        <Route exact path='/home/indexVendedor/salesBySeller' component={SalesBySeller}/> 
-        <Route exact path='/home/indexVendedor/salesBySeller/salesStates' component={SalesStates}/>   
+     
 
 
         </Switch>
