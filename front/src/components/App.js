@@ -15,9 +15,7 @@ import SalesStates from "../Pages/SalesStates";
 import UdSeller from "../Pages/UdSeller";
 
 import Vendedores from "../Pages/Vendedores";
-import SalesBySeller from "../Pages/SalesBySeller";
-import SalesStates from "../Pages/SalesStates";
-import UdSeller from "../Pages/UdSeller";
+
 
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
 
