@@ -8,9 +8,7 @@ class UdSeller extends React.Component{
     render(){
         return(
             <div>
-                <UdDatosVendedor></UdDatosVendedor>
- 
-  
+                < InicioVendedores/>
  
   
   

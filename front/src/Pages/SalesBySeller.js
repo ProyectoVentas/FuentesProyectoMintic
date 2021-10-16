@@ -8,7 +8,7 @@ class SallesBySeller extends React.Component{
     render(){
         return(
             <div>
-                <HistoriaVendedor></HistoriaVendedor>
+              <IndexSellerHistory/>
  
   
  
