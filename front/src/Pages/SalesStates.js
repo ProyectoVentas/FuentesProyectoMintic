@@ -8,7 +8,7 @@ class SalesStates extends React.Component{
     render(){
         return(
             <div>
-                <VentasActivasVendedor></VentasActivasVendedor>
+                <IndexActiveSalesSeller/>
  
   
  
