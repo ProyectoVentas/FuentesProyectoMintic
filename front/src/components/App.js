@@ -10,9 +10,14 @@ import GestionProductos from "../Pages/GestionProductos";
 import Comprar from "../Pages/Comprar"
 
 import IndexVentas from "../Pages/IndexVentas";
-
+import SalesBySeller from "../Pages/SalesBySeller";
+import SalesStates from "../Pages/SalesStates";
+import UdSeller from "../Pages/UdSeller";
 
 import Vendedores from "../Pages/Vendedores";
+import SalesBySeller from "../Pages/SalesBySeller";
+import SalesStates from "../Pages/SalesStates";
+import UdSeller from "../Pages/UdSeller";
 
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
 
@@ -31,11 +36,17 @@ function App(){
         <Route exact path='/login/forgotPassword' component={ForgotPassword}/>
         <Route exact path='/registrarse' component={Registrarse}/>
         <Route exact path='/home/indexVendedor' component={Vendedores}/>   
+        <Route exact path='/home/indexVendedor/udVendedor' component={UdSeller}/>
+        <Route exact path='/home/indexVendedor/salesBySeller' component={SalesBySeller}/> 
+        <Route exact path='/home/indexVendedor/salesBySeller/salesStates' component={SalesStates}/>   
 
         <Route exact path='/home/gestionproductos' component={GestionProductos}/>
 <Route exact path='/home/comprar' component={Comprar}/>
         <Route exact path='/home/indexventas' component={IndexVentas}/>
-        
+        <Route exact path='/home/indexVendedor/udVendedor' component={UdSeller}/>
+        <Route exact path='/home/indexVendedor/salesBySeller' component={SalesBySeller}/> 
+        <Route exact path='/home/indexVendedor/salesBySeller/salesStates' component={SalesStates}/>   
+
 
         </Switch>
         </div>
