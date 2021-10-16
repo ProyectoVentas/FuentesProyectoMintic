@@ -12,26 +12,7 @@
      text-align: center;
  }
  
- .delete {
-     background-color: red;  
-     color: black;
-     
-     margin: 8px 2px;
-     border:1px,black;
-     cursor: pointer;    
-     opacity: 0.9;
  
-   }
-   .update {
-     background-color: rgb(19, 207, 182);  
-     color: black;
-     
-     margin: 8px 2px;
-     border:1px,black;
-     cursor: pointer;    
-     opacity: 0.9;
- 
-   }
    #titulotabla{
        text-align: left;
        padding-left: 60px;
