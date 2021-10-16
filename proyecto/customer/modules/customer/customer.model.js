@@ -26,7 +26,7 @@
 
         bdate:Date,
             
-        psw:{
+        password:{
             type: String,
             required: [true, 'Enter a password.'],
             minLength: [4, 'Password should be at least four characters']
@@ -49,7 +49,7 @@
     CustomerSchema.pre('save', async function(next) {
     
         //hash the password, set hash cost to 12  
-        this.psw = await bcrypt.hash(this.psw, 12);
+        this.password = await bcrypt.hash(this.password, 12);
     
         //remove the passwordConfirmed field 
         this.pswrepeat = undefined; 

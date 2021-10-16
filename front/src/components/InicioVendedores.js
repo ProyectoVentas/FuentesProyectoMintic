@@ -2,7 +2,7 @@ import React from "react";
 import './styleshome/css/main.css'
 import './styleshome/plugins/fontawesome-free/css/all.min.css'
 import './styleshome/dist/css/adminlte.min.css'
-import { Link } from 'react-router-dom'
+
 class InicioVendedores extends React.Component{
 render(){
     return(
