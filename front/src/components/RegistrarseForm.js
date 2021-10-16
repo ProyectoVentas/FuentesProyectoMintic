@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Redirect } from 'react-router-dom'
+
 
 import './styles_gestion_rol/formato.css'
 
@@ -16,6 +16,7 @@ const RegistrarseForm = () => {
  
 
   const [newVal, setNewVal] = React.useState(0);
+  const [error,setError]=React.useState(null);
   const [usuario, setUsuario] = React.useState({
     data: data,
     form: {
@@ -24,7 +25,7 @@ const RegistrarseForm = () => {
       email: "",
       phone: "",
       bdate: "",
-      psw: "",
+      password: "",
       pswrepeat: "",
       roles:""
 
@@ -70,9 +71,8 @@ const RegistrarseForm = () => {
         },
        
      
-          (error) => {
-            error.json();
-            console.log(error.message);
+          (err) => {
+            setError(err.message)
           
           }
           );
@@ -90,10 +90,12 @@ const RegistrarseForm = () => {
 
 
             <div class="container"  >
+              
           <h1>Registro</h1>
           <p>Por favor llena todos los campos.</p>
           <hr/>
           <form id='formregistro'>
+          { error && <div>{ error }</div> }
           <div>
           <label for="Nombre"><b>Nombre</b></label>
          <input type="String" placeholder="Nombre" name="fName" id="fname" required  onChange={handleChange}/>
@@ -142,7 +144,7 @@ const RegistrarseForm = () => {
 
           <div>
           <label for="psw"><b>Contrasena</b></label>
-          <input type="Password" placeholder="Contrasena" name="psw" id="psw" required onChange={handleChange} />
+          <input type="Password" placeholder="Contrasena" name="password" id="psw" required onChange={handleChange} />
         </div>
           <br/>
           <div>

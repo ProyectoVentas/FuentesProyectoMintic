@@ -20,7 +20,7 @@ const TablaRol = () => {
       email: "",
       phone: "",
       bdate: "",
-      psw: "",
+      password: "",
       pswrepeat: "",
       roles:""
       }
@@ -176,7 +176,7 @@ const TablaRol = () => {
                   <td>{dato.roles}</td>
                   <td>
                     <button  id={dato._id} class="update" onClick={mostrarModalActualizar}>Actualizar</button>
-                    <button id={dato._id} color="danger"  class="delete" onClick={eliminar}>Eliminar</button>
+                    <button id={dato._id}   class="delete" onClick={eliminar}>Eliminar</button>
                   </td>
                 </tr>
               ))}
