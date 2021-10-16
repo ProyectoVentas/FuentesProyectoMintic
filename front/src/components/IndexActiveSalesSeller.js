@@ -12,7 +12,7 @@ render(){
                 <div class="container">
                     <h1>Ventas activas</h1>
                     <p>Solo lectura</p>
-                    <hr>
+                    <hr/>
                         <div>
                             <table>
                                 <tr>
@@ -31,8 +31,8 @@ render(){
                             </table>
                         </div>
 
-                    </hr>
-                    <a href="./salesBySeller.html">Regresar</a>
+                    <hr/>
+                    <Link to='/home/indexVendedor/salesBySeller'> <a >Regresar</a></Link>
                 </div>
 
 

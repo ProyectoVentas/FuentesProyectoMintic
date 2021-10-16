@@ -12,12 +12,12 @@ render(){
                 <div class="container">
                     <h1>Informacion  vendedor id</h1>
                     <p>Solo lectura</p>
-                    <hr>
+                    <hr/>
                         <div>
                             <table>
                                 <tr>
                                     <th>IU Vendedor</th>
-                                    <th><a href="./salesStates.html">Ventas en proceso</a></th>
+                                    <th><Link to='/home/indexVendedor/salesBySeller/salesStates'><a href="./salesStates.html">Ventas en proceso</a></Link></th>
                                     <th>Ventas canceladas</th>
                                     <th>Ventas confirmadas</th>
                                     <th>Reputación</th>
@@ -35,8 +35,8 @@ render(){
                             </table>
                         </div>
 
-                    </hr>
-                    <a href="wcSeller.html">Regresar</a>
+                    <hr/>
+                    <Link to="/home/indexVendedor"><a >Regresar</a></Link>
                 </div>
 
 
