@@ -7,8 +7,15 @@
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {
+<<<<<<< HEAD
     "bluebird": "^3.7.2",
     "cookie-parser": "~1.4.4",
+=======
+    "bcrypt": "^5.0.1",
+    "bluebird": "^3.7.2",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+>>>>>>> 67d5b702dec92062ff0ff5c045751d7ad4c99c3e
     "debug": "~2.6.9",
     "dotenv": "^10.0.0",
     "express": "~4.16.1",
@@ -16,6 +23,12 @@
     "mongodb": "^4.1.3",
     "mongoose": "^6.0.10",
     "morgan": "~1.9.1",
+<<<<<<< HEAD
     "nodemon": "^2.0.13"
+=======
+    "nodemon": "^2.0.13",
+    "path": "^0.12.7",
+    "validator": "^13.6.0"
+>>>>>>> 67d5b702dec92062ff0ff5c045751d7ad4c99c3e
   }
 }

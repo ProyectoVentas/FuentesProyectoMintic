@@ -9,6 +9,10 @@ var CustomerController = require('./modules/customer/customer.module')().Custome
 var VentasController=require('./modules/ventas/ventas.module')().VentasController;
 var app = express();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 67d5b702dec92062ff0ff5c045751d7ad4c99c3e
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

@@ -18,12 +18,24 @@
             .catch(failure);
 
         function success(data) {
+<<<<<<< HEAD
             req.response = data;
+=======
+            
+            req.response = data;
+            console.log(req.response)
+>>>>>>> 67d5b702dec92062ff0ff5c045751d7ad4c99c3e
             next();
         }
 
         function failure(error) {
+<<<<<<< HEAD
             next(error);
+=======
+         console.log(error)
+            req.response=({error:'001', message:"Really"});
+            next(error.json());
+>>>>>>> 67d5b702dec92062ff0ff5c045751d7ad4c99c3e
         }
 
     }
