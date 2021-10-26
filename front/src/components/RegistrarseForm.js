@@ -1,15 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 
-<<<<<<< HEAD:react/proyectoventas/src/components/RegistrarseForm.js
 import '../components/styles_gestion_rol/formato.css'
-=======
-
-
-import './styles_gestion_rol/formato.css'
-
-
->>>>>>> 67d5b702dec92062ff0ff5c045751d7ad4c99c3e:front/src/components/RegistrarseForm.js
 
 const data=[]
 
@@ -160,14 +152,11 @@ const RegistrarseForm = () => {
 
                         <div>
                     <p>Al crear la cuenta aceptas <a href="#">Terminos & Privacidad</a>.</p>
-<<<<<<< HEAD:react/proyectoventas/src/components/RegistrarseForm.js
+
                   <Link to="/home/login/registrarse/confirmation">  <button type="submit" class="registerbtn" onClick={insertar}>Registrarse</button></Link>
           
-=======
-<button type="submit" class="registerbtn" onClick={insertar}>Registrarse</button>
 
 
->>>>>>> 67d5b702dec92062ff0ff5c045751d7ad4c99c3e:front/src/components/RegistrarseForm.js
         </div>
         </form>
         <div class="container signin">

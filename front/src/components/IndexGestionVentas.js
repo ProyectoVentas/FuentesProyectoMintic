@@ -9,11 +9,8 @@ const PATH_VENTAS = process.env.REACT_APP_API_VENTAS_PATH;
 
 const IndexGestionVentas = () => {
     var modal = document.getElementById("myModal");
-<<<<<<< HEAD:react/proyectoventas/src/components/IndexGestionVentas.js
-    const [modalActualizar, setModalActualizar] = React.useState(false);
-=======
+
     const [modalActualizar] = React.useState(false);
->>>>>>> 67d5b702dec92062ff0ff5c045751d7ad4c99c3e:front/src/components/IndexGestionVentas.js
     const [newVal, setNewVal] = React.useState(0);
      
       const [usuario, setUsuario] = React.useState({

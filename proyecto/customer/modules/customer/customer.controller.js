@@ -9,18 +9,11 @@
     router.post('/',
         CustomerMiddleware.addCustomer,
         function (req, res) {
-<<<<<<< HEAD
+
             res.status(201).json(req.response);
         });
 
-=======
-           
-            res.status(201).json(req.response);
-          
-        });
 
-
->>>>>>> 67d5b702dec92062ff0ff5c045751d7ad4c99c3e
     router.get('/',
         CustomerMiddleware.getCustomers,
         function (req, res) {
